@@ -8,6 +8,7 @@ Comprehensive guide to website UX fundamentals for beginners, built with [VitePr
 - **Chapter 2: The UX design process** (`docs/design-process/`): UX portfolios, empathy, user interviews, empathy maps, pain points, personas, user stories and edge cases, user journey maps, accessibility in research, problem and hypothesis statements, value propositions, human factors, ideation, goal statements, competitive audits, How might we, and Crazy Eights
 - **Chapter 3: Wireframes and low-fidelity prototypes** (`docs/wireframes-and-prototypes/`): prototypes, user flows, storyboards, fidelity, wireframes, information architecture and sitemaps, paper and digital wireframes, Gestalt principles, paper and Figma prototypes, bias in design, deceptive patterns, and ethical and inclusive design
 - **Chapter 4: UX research and usability testing** (`docs/research-and-testing/`): research studies, inclusive research language, research plans, KPIs, methodology and participants, scripts, privacy and ethics, moderated and unmoderated usability studies, bias, note-taking, affinity diagrams and insights, presenting research, and iterating on designs
+- **Chapter 5: High-fidelity designs and prototypes** (`docs/high-fidelity-design/`): mockups, typography, color and accessible color, icons and images, links, buttons, and inputs, layout grids, containment and negative space, common screens and navigation, visual design principles, more Gestalt principles, design systems, sticker sheets and components, high-fidelity prototypes, gestures, motion, and sound, testing and iterating, and handoff and case studies
 
 Older guides waiting to be reworked into chapters (in `__old/`):
 
@@ -47,18 +48,20 @@ __old/                      # previous guides, not included in the site for now
 └── pl/*.md                 # Polish translations
 docs/
 ├── .vitepress/config.mts   # site config, locales, sidebars, and font loading
-├── .vitepress/theme/       # default theme with the Mona Sans font
+├── .vitepress/theme/       # default theme with Metrophobic (body) and Krona One (headings and site title)
 ├── index.md                # English home page
 ├── foundations/            # Chapter 1 (English)
 ├── design-process/         # Chapter 2 (English)
 ├── wireframes-and-prototypes/  # Chapter 3 (English)
 ├── research-and-testing/   # Chapter 4 (English)
+├── high-fidelity-design/   # Chapter 5 (English)
 └── pl/
     ├── index.md            # Polish home page
     ├── foundations/        # Chapter 1 (Polish)
     ├── design-process/     # Chapter 2 (Polish)
     ├── wireframes-and-prototypes/  # Chapter 3 (Polish)
-    └── research-and-testing/   # Chapter 4 (Polish)
+    ├── research-and-testing/   # Chapter 4 (Polish)
+    └── high-fidelity-design/   # Chapter 5 (Polish)
 ```
 
 English is the default locale served at `/`, Polish is served at `/pl/`. When adding a new page, create it in both `docs/` and `docs/pl/` with the same file name, and add it, with its English and Polish titles, to the `chapters` list in `docs/.vitepress/config.mts`. The navigation bar and the sidebars of both languages are generated from that list.

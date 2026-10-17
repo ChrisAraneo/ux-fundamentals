@@ -3,8 +3,7 @@ layout: home
 
 hero:
   name: UX Fundamentals
-  text: UX guides for beginners
-  tagline: Learn user experience design step by step, in simple language.
+  tagline: User Experience guides for beginners
   actions:
     - theme: brand
       text: Start with Chapter 1
@@ -23,4 +22,7 @@ features:
   - title: Chapter 4 - UX research and usability testing
     details: Research plans, KPIs, usability studies, note-taking, affinity diagrams, insights, presentations, and iteration.
     link: /research-and-testing/
+  - title: Chapter 5 - High-fidelity designs and prototypes
+    details: Typography, color, icons, grids, visual design principles, design systems, hi-fi prototypes, gestures and motion, handoff, and case studies.
+    link: /high-fidelity-design/
 ---

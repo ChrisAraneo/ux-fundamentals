@@ -3,8 +3,7 @@ layout: home
 
 hero:
   name: UX Fundamentals
-  text: Poradniki UX dla początkujących
-  tagline: Poznaj projektowanie doświadczeń użytkownika krok po kroku, prostym językiem.
+  tagline: Poradniki UX dla początkujących
   actions:
     - theme: brand
       text: Zacznij od rozdziału 1
@@ -23,4 +22,7 @@ features:
   - title: Rozdział 4 - Badania UX i testy użyteczności
     details: Plany badań, wskaźniki KPI, badania użyteczności, notatki, diagramy pokrewieństwa, wnioski, prezentacje i iteracja.
     link: /pl/research-and-testing/
+  - title: Rozdział 5 - Projekty i prototypy wysokiej wierności
+    details: Typografia, kolor, ikony, siatki, zasady projektowania wizualnego, systemy projektowe, prototypy hi-fi, gesty i ruch, przekazanie projektu i studia przypadków.
+    link: /pl/high-fidelity-design/
 ---

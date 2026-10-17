@@ -102,6 +102,31 @@ const chapters: Chapter[] = [
       ['14-iterating-on-designs', 'Iterating on designs', 'Iterowanie projektu'],
       ['15-glossary', 'Glossary', 'Słowniczek']
     ]
+  },
+  {
+    folder: 'high-fidelity-design',
+    title: { en: 'Chapter 5: High-fidelity designs and prototypes', pl: 'Rozdział 5: Projekty i prototypy wysokiej wierności' },
+    navTitle: { en: 'Chapter 5: Hi-fi design', pl: 'Rozdział 5: Projekty hi-fi' },
+    pages: [
+      ['01-from-wireframes-to-mockups', 'From wireframes to mockups', "Od wireframe'ów do makiet"],
+      ['02-typography', 'Typography', 'Typografia'],
+      ['03-color', 'Color', 'Kolor'],
+      ['04-accessible-color', 'Accessible color', 'Dostępne kolory'],
+      ['05-icons-and-images', 'Icons and images', 'Ikony i obrazy'],
+      ['06-links-buttons-and-inputs', 'Links, buttons, and inputs', 'Linki, przyciski i pola tekstowe'],
+      ['07-layout-grids', 'Layout grids', 'Siatki układu'],
+      ['08-containment-and-negative-space', 'Containment and negative space', 'Wydzielanie treści i przestrzeń negatywna'],
+      ['09-common-screens-and-navigation', 'Common screens and navigation', 'Typowe ekrany i nawigacja'],
+      ['10-visual-design-principles', 'Visual design principles', 'Zasady projektowania wizualnego'],
+      ['11-more-gestalt-principles', 'More Gestalt principles', 'Więcej zasad Gestalt'],
+      ['12-design-systems', 'Design systems', 'Systemy projektowe'],
+      ['13-sticker-sheets-and-components', 'Sticker sheets and components', 'Arkusze naklejek i komponenty'],
+      ['14-high-fidelity-prototypes', 'High-fidelity prototypes', 'Prototypy wysokiej wierności'],
+      ['15-gestures-motion-and-sound', 'Gestures, motion, and sound', 'Gesty, ruch i dźwięk'],
+      ['16-testing-and-iterating', 'Testing and iterating', 'Testowanie i iterowanie'],
+      ['17-handoff-and-case-study', 'Handoff and case study', 'Przekazanie projektu i studium przypadku'],
+      ['18-glossary', 'Glossary', 'Słowniczek']
+    ]
   }
 ]
 
@@ -145,7 +170,7 @@ export default defineConfig({
       'link',
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Krona+One&family=Metrophobic&display=swap'
       }
     ]
   ],

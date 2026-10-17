@@ -1,4 +1,130 @@
 :root {
-  --vp-font-family-base: 'Mona Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  --vp-font-family-base: 'Metrophobic', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
+  --vp-font-family-heading: 'Krona One', ui-sans-serif, system-ui, sans-serif;
+  --vp-font-family-brand: 'Krona One', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Brand color, #000098 in light mode and #4141D9 in dark mode: brand-1 for text and links, brand-2 for hover,
+   brand-3 for solid backgrounds like buttons, brand-soft for tinted backgrounds */
+:root {
+  --vp-c-brand-1: #000098;
+  --vp-c-brand-2: #0000cd;
+  --vp-c-brand-3: #000098;
+  --vp-c-brand-soft: rgba(0, 0, 152, 0.1);
+}
+
+.dark {
+  --vp-c-brand-1: #4141d9;
+  --vp-c-brand-2: #6b6be3;
+  --vp-c-brand-3: #4141d9;
+  --vp-c-brand-soft: rgba(65, 65, 217, 0.16);
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6,
+.VPHero .text {
+  font-family: var(--vp-font-family-heading);
+}
+
+/* Krona One ships a single regular weight that is already heavy, so headings use it as is instead of a synthesized bold */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+  font-weight: 400;
+  font-synthesis: none;
+}
+
+/* The home hero fills at least two thirds of the viewport, but never less than 400px, with its content vertically centered */
+.VPHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: max(66vh, 400px);
+}
+
+.VPHero .container {
+  width: 100%;
+}
+
+/* Home hero: centered name, tagline and actions; the extra .main raises specificity above the scoped VPHero styles */
+.VPHero .main {
+  width: 100%;
+  text-align: center;
+}
+
+.VPHero .main .name,
+.VPHero .main .tagline {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.VPHero .main .actions {
+  justify-content: center;
+}
+
+/* Krona One is a wide face with a single weight, so it runs smaller and at its regular weight, without the default max-width wrapping it early */
+.VPHero .main .name {
+  max-width: none;
+  font-family: var(--vp-font-family-brand);
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.2;
+  font-size: 28px;
+}
+
+@media (min-width: 640px) {
+  .VPHero .main .name {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPHero .main .name {
+    font-size: 52px;
+  }
+}
+
+/* The site title in the nav bar matches the hero name; a.title outranks the scoped .title rule */
+.VPNavBarTitle a.title {
+  font-family: var(--vp-font-family-brand);
+  font-weight: 400;
+}
+
+/* The sidebar's pattern, rendered once by SidebarBackground.vue and exposed as --symmetry-art */
+.VPSidebar {
+  background-image: var(--symmetry-art, none);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Only the 272px of the sidebar next to the content get the sidebar color (#F6F6F7 light, #161618 dark); on wide
+   screens, where the sidebar reaches into the left page margin, the rest of it matches the page (#FFFFFF, #1B1B1F).
+   The band is a solid SVG rectangle rather than a CSS gradient, which Chrome dithers in dark colors. :root raises
+   the specificity above the scoped VPSidebar background color */
+@media (min-width: 960px) {
+  :root:not(.dark) .VPSidebar,
+  :root.dark .VPSidebar {
+    background-size: 100% 100%, 272px 100%;
+    background-position: left top, right top;
+  }
+
+  :root:not(.dark) .VPSidebar {
+    background-color: #ffffff;
+    background-image: var(--symmetry-art, none),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23f6f6f7'/%3E%3C/svg%3E");
+  }
+
+  :root.dark .VPSidebar {
+    background-color: #1b1b1f;
+    background-image: var(--symmetry-art, none),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23161618'/%3E%3C/svg%3E");
+  }
 }

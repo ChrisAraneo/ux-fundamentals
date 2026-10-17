@@ -43,7 +43,8 @@ __old/                      # previous guides, not included in the site for now
 ├── *.md                    # English
 └── pl/*.md                 # Polish translations
 docs/
-├── .vitepress/config.mts   # site config, locales, and sidebars
+├── .vitepress/config.mts   # site config, locales, sidebars, and font loading
+├── .vitepress/theme/       # default theme with the Mona Sans font
 ├── index.md                # English home page
 ├── foundations/            # Chapter 1 (English)
 └── pl/

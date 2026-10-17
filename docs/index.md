@@ -20,4 +20,7 @@ features:
   - title: Chapter 3 - Wireframes and low-fidelity prototypes
     details: User flows, storyboards, information architecture, wireframes, prototypes in Figma, and ethical design.
     link: /wireframes-and-prototypes/
+  - title: Chapter 4 - UX research and usability testing
+    details: Research plans, KPIs, usability studies, note-taking, affinity diagrams, insights, presentations, and iteration.
+    link: /research-and-testing/
 ---

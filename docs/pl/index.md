@@ -20,4 +20,7 @@ features:
   - title: Rozdział 3 - Wireframe'y i prototypy niskiej wierności
     details: Przepływy użytkownika, storyboardy, architektura informacji, wireframe'y, prototypy w Figmie i projektowanie etyczne.
     link: /pl/wireframes-and-prototypes/
+  - title: Rozdział 4 - Badania UX i testy użyteczności
+    details: Plany badań, wskaźniki KPI, badania użyteczności, notatki, diagramy pokrewieństwa, wnioski, prezentacje i iteracja.
+    link: /pl/research-and-testing/
 ---

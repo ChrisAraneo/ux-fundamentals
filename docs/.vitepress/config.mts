@@ -80,6 +80,28 @@ const chapters: Chapter[] = [
       ['13-ethical-and-inclusive-design', 'Ethical and inclusive design', 'Projektowanie etyczne i inkluzywne'],
       ['14-glossary', 'Glossary', 'Słowniczek']
     ]
+  },
+  {
+    folder: 'research-and-testing',
+    title: { en: 'Chapter 4: UX research and usability testing', pl: 'Rozdział 4: Badania UX i testy użyteczności' },
+    navTitle: { en: 'Chapter 4: Research', pl: 'Rozdział 4: Badania' },
+    pages: [
+      ['01-the-research-study', 'The research study', 'Proces badania UX'],
+      ['02-language-in-research', 'Language in research', 'Język w badaniach'],
+      ['03-research-plan', 'The research plan', 'Plan badania'],
+      ['04-kpis', 'Key performance indicators', 'Kluczowe wskaźniki efektywności'],
+      ['05-methodology-and-participants', 'Methodology and participants', 'Metodologia i uczestnicy'],
+      ['06-research-script', 'The research script', 'Scenariusz badania'],
+      ['07-privacy-and-ethics', 'Privacy and ethics', 'Prywatność i etyka'],
+      ['08-usability-studies', 'Usability studies', 'Badania użyteczności'],
+      ['09-moderating-a-usability-study', 'Moderating a usability study', 'Moderowanie badania użyteczności'],
+      ['10-bias-in-usability-studies', 'Bias in usability studies', 'Błędy poznawcze w badaniach użyteczności'],
+      ['11-taking-notes', 'Taking notes', 'Robienie notatek'],
+      ['12-from-observations-to-insights', 'From observations to insights', 'Od obserwacji do wniosków'],
+      ['13-sharing-insights', 'Sharing insights', 'Dzielenie się wnioskami'],
+      ['14-iterating-on-designs', 'Iterating on designs', 'Iterowanie projektu'],
+      ['15-glossary', 'Glossary', 'Słowniczek']
+    ]
   }
 ]
 

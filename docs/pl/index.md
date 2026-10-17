@@ -14,4 +14,7 @@ features:
   - title: Rozdział 1 - Podstawy projektowania UX
     details: Czym jest UX, kto nad nim pracuje, design thinking, sprinty projektowe, badania UX i błędy poznawcze.
     link: /pl/foundations/
+  - title: Rozdział 2 - Proces projektowania UX
+    details: Wywiady, mapy empatii, persony, mapy ścieżki użytkownika, opisy problemów, audyty konkurencji i generowanie pomysłów.
+    link: /pl/design-process/
 ---

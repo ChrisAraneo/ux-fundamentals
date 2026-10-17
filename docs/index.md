@@ -14,4 +14,7 @@ features:
   - title: Chapter 1 - Foundations of UX design
     details: What UX is, who works on it, design thinking, design sprints, UX research, and bias.
     link: /foundations/
+  - title: Chapter 2 - The UX design process
+    details: Interviews, empathy maps, personas, journey maps, problem statements, competitive audits, and ideation.
+    link: /design-process/
 ---

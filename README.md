@@ -5,6 +5,7 @@ Comprehensive guide to website UX fundamentals for beginners, built with [VitePr
 ## Chapters
 
 - **Chapter 1: Foundations of UX design** (`docs/foundations/`): what UX is, roles in UX, the product development life cycle, user-centered and inclusive design, assistive technology, platforms, design thinking, design sprints, UX research, and bias in research
+- **Chapter 2: The UX design process** (`docs/design-process/`): UX portfolios, empathy, user interviews, empathy maps, pain points, personas, user stories and edge cases, user journey maps, accessibility in research, problem and hypothesis statements, value propositions, human factors, ideation, goal statements, competitive audits, How might we, and Crazy Eights
 
 Older guides waiting to be reworked into chapters (in `__old/`):
 
@@ -47,9 +48,11 @@ docs/
 ├── .vitepress/theme/       # default theme with the Mona Sans font
 ├── index.md                # English home page
 ├── foundations/            # Chapter 1 (English)
+├── design-process/         # Chapter 2 (English)
 └── pl/
     ├── index.md            # Polish home page
-    └── foundations/        # Chapter 1 (Polish)
+    ├── foundations/        # Chapter 1 (Polish)
+    └── design-process/     # Chapter 2 (Polish)
 ```
 
-English is the default locale served at `/`, Polish is served at `/pl/`. When adding a new page, create it in both `docs/` and `docs/pl/` with the same file name, and add it to both sidebars in `docs/.vitepress/config.mts`.
+English is the default locale served at `/`, Polish is served at `/pl/`. When adding a new page, create it in both `docs/` and `docs/pl/` with the same file name, and add it, with its English and Polish titles, to the `chapters` list in `docs/.vitepress/config.mts`. The navigation bar and the sidebars of both languages are generated from that list.

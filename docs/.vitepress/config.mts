@@ -56,6 +56,30 @@ const chapters: Chapter[] = [
       ['15-how-might-we-and-crazy-eights', 'How might we and Crazy Eights', '„Jak moglibyśmy…?” i Crazy Eights'],
       ['16-glossary', 'Glossary', 'Słowniczek']
     ]
+  },
+  {
+    folder: 'wireframes-and-prototypes',
+    title: {
+      en: 'Chapter 3: Wireframes and low-fidelity prototypes',
+      pl: "Rozdział 3: Wireframe'y i prototypy niskiej wierności"
+    },
+    navTitle: { en: 'Chapter 3: Wireframes', pl: "Rozdział 3: Wireframe'y" },
+    pages: [
+      ['01-from-ideas-to-prototypes', 'From ideas to prototypes', 'Od pomysłów do prototypów'],
+      ['02-user-flows', 'User flows', 'Przepływy użytkownika'],
+      ['03-storyboards', 'Storyboards', 'Storyboardy'],
+      ['04-fidelity-and-wireframes', 'Fidelity and wireframes', "Wierność i wireframe'y"],
+      ['05-information-architecture', 'Information architecture', 'Architektura informacji'],
+      ['06-paper-wireframes', 'Paper wireframes', "Papierowe wireframe'y"],
+      ['07-digital-wireframes', 'Digital wireframes', "Cyfrowe wireframe'y"],
+      ['08-gestalt-principles', 'Gestalt principles', 'Zasady Gestalt'],
+      ['09-low-fidelity-prototypes', 'Low-fidelity prototypes', 'Prototypy niskiej wierności'],
+      ['10-digital-prototypes-in-figma', 'Digital prototypes in Figma', 'Prototypy cyfrowe w Figmie'],
+      ['11-bias-in-design', 'Bias in design', 'Błędy poznawcze i uprzedzenia w projektowaniu'],
+      ['12-deceptive-patterns', 'Deceptive patterns', 'Zwodnicze wzorce projektowe'],
+      ['13-ethical-and-inclusive-design', 'Ethical and inclusive design', 'Projektowanie etyczne i inkluzywne'],
+      ['14-glossary', 'Glossary', 'Słowniczek']
+    ]
   }
 ]
 

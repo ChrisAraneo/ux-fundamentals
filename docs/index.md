@@ -17,4 +17,7 @@ features:
   - title: Chapter 2 - The UX design process
     details: Interviews, empathy maps, personas, journey maps, problem statements, competitive audits, and ideation.
     link: /design-process/
+  - title: Chapter 3 - Wireframes and low-fidelity prototypes
+    details: User flows, storyboards, information architecture, wireframes, prototypes in Figma, and ethical design.
+    link: /wireframes-and-prototypes/
 ---

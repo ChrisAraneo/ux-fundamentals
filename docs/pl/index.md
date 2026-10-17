@@ -17,4 +17,7 @@ features:
   - title: Rozdział 2 - Proces projektowania UX
     details: Wywiady, mapy empatii, persony, mapy ścieżki użytkownika, opisy problemów, audyty konkurencji i generowanie pomysłów.
     link: /pl/design-process/
+  - title: Rozdział 3 - Wireframe'y i prototypy niskiej wierności
+    details: Przepływy użytkownika, storyboardy, architektura informacji, wireframe'y, prototypy w Figmie i projektowanie etyczne.
+    link: /pl/wireframes-and-prototypes/
 ---

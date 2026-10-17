@@ -31,6 +31,9 @@ const MAX_FRAME_MS = 100
 // Strokes are fully opaque, so they come out in exactly these colors; they differ only in width
 const COLORS = { light: '#f6f6f7', dark: '#202127' }
 
+// Lines in the page margins on doc pages, left of the sidebar band and right of the outline column
+export const MARGIN_COLORS = { light: '#f6f6f7', dark: '#161618' }
+
 // Small seeded PRNG, so a pattern can be regenerated identically after a resize
 function mulberry32(seed: number): () => number {
   return () => {
@@ -401,8 +404,13 @@ export function createSymmetryArt(canvas: HTMLCanvasElement, anchor: HTMLElement
 // A finished pattern, drawn all at once and never erased, exposed on `element` as the `--symmetry-art` custom property
 // for its CSS to use as a background image. A CSS background stays in place while the element's own content scrolls,
 // so this suits a scrolling panel like the sidebar.
-export function renderStaticSymmetryArt(element: HTMLElement, colors: ThemeColors = COLORS): SymmetryArt {
-  const pattern = createPattern(Math.floor(Math.random() * 2 ** 32))
+// Passing the same `seed` again draws the same pattern.
+export function renderStaticSymmetryArt(
+  element: HTMLElement,
+  colors: ThemeColors = COLORS,
+  seed = Math.floor(Math.random() * 2 ** 32)
+): SymmetryArt {
+  const pattern = createPattern(seed)
   const canvas = document.createElement('canvas')
   const ctx = canvas.getContext('2d')!
   let url = ''

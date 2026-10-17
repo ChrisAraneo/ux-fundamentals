@@ -128,3 +128,65 @@
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23161618'/%3E%3C/svg%3E");
   }
 }
+
+/* The page margin right of the outline column on doc pages, with the same pattern as the sidebar margin; the layer is
+   created by AsideBackground.vue, which sets its left edge and --symmetry-art */
+.AsideBackground {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-left: 1px solid #f6f6f7;
+  pointer-events: none;
+  background-image: var(--symmetry-art, none);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.dark .AsideBackground {
+  border-left-color: #161618;
+}
+
+/* Scrollbars: a slim pill-shaped thumb in a soft gray that turns brand blue on hover, on a transparent track so the
+   backgrounds (such as the sidebar band) show through */
+:root {
+  --scrollbar-thumb: #d1d1d8;
+  --scrollbar-thumb-hover: var(--vp-c-brand-1);
+}
+
+.dark {
+  --scrollbar-thumb: #3a3a42;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* The transparent border insets the thumb from the edges, so it looks 6px wide inside a 12px gutter */
+::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: var(--scrollbar-thumb);
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  border-width: 2px;
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+/* Firefox has no ::-webkit-scrollbar, only a thin width and the two colors */
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) transparent;
+  }
+}

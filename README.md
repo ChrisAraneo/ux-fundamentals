@@ -28,6 +28,10 @@ npm run docs:build    # build the static site into docs/.vitepress/dist
 npm run docs:preview  # preview the production build
 ```
 
+## Deployment
+
+The site is deployed to [Netlify](https://www.netlify.com). The build settings live in `netlify.toml`: Netlify runs `npm run docs:build` on Node.js 24 and publishes `docs/.vitepress/dist`. Every push to `master` triggers a new deploy, and pull requests get preview deploys.
+
 ## Project structure
 
 ```

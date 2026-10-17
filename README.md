@@ -9,6 +9,7 @@ Comprehensive guide to website UX fundamentals for beginners, built with [VitePr
 - **Chapter 3: Wireframes and low-fidelity prototypes** (`docs/wireframes-and-prototypes/`): prototypes, user flows, storyboards, fidelity, wireframes, information architecture and sitemaps, paper and digital wireframes, Gestalt principles, paper and Figma prototypes, bias in design, deceptive patterns, and ethical and inclusive design
 - **Chapter 4: UX research and usability testing** (`docs/research-and-testing/`): research studies, inclusive research language, research plans, KPIs, methodology and participants, scripts, privacy and ethics, moderated and unmoderated usability studies, bias, note-taking, affinity diagrams and insights, presenting research, and iterating on designs
 - **Chapter 5: High-fidelity designs and prototypes** (`docs/high-fidelity-design/`): mockups, typography, color and accessible color, icons and images, links, buttons, and inputs, layout grids, containment and negative space, common screens and navigation, visual design principles, more Gestalt principles, design systems, sticker sheets and components, high-fidelity prototypes, gestures, motion, and sound, testing and iterating, and handoff and case studies
+- **Chapter 6: Responsive websites** (`docs/responsive-websites/`): responsive web design, web apps vs. dedicated apps, website structures, sitemaps, homepage layouts, paper and digital wireframes for several screen sizes, breakpoints, components for small screens, accessible wireframes, low- and high-fidelity website prototypes, mockups, web accessibility, design critiques, working with developers, a second case study, UX jobs, and resumes
 
 Older guides waiting to be reworked into chapters (in `__old/`):
 
@@ -55,13 +56,15 @@ docs/
 ├── wireframes-and-prototypes/  # Chapter 3 (English)
 ├── research-and-testing/   # Chapter 4 (English)
 ├── high-fidelity-design/   # Chapter 5 (English)
+├── responsive-websites/    # Chapter 6 (English)
 └── pl/
     ├── index.md            # Polish home page
     ├── foundations/        # Chapter 1 (Polish)
     ├── design-process/     # Chapter 2 (Polish)
     ├── wireframes-and-prototypes/  # Chapter 3 (Polish)
     ├── research-and-testing/   # Chapter 4 (Polish)
-    └── high-fidelity-design/   # Chapter 5 (Polish)
+    ├── high-fidelity-design/   # Chapter 5 (Polish)
+    └── responsive-websites/    # Chapter 6 (Polish)
 ```
 
 English is the default locale served at `/`, Polish is served at `/pl/`. When adding a new page, create it in both `docs/` and `docs/pl/` with the same file name, and add it, with its English and Polish titles, to the `chapters` list in `docs/.vitepress/config.mts`. The navigation bar and the sidebars of both languages are generated from that list.

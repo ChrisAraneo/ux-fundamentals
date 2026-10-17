@@ -25,4 +25,7 @@ features:
   - title: Chapter 5 - High-fidelity designs and prototypes
     details: Typography, color, icons, grids, visual design principles, design systems, hi-fi prototypes, gestures and motion, handoff, and case studies.
     link: /high-fidelity-design/
+  - title: Chapter 6 - Responsive websites
+    details: Website structures, sitemaps, homepage layouts, breakpoints, responsive wireframes and prototypes, web accessibility, design critiques, and your first UX job search.
+    link: /responsive-websites/
 ---

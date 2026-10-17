@@ -25,4 +25,7 @@ features:
   - title: Rozdział 5 - Projekty i prototypy wysokiej wierności
     details: Typografia, kolor, ikony, siatki, zasady projektowania wizualnego, systemy projektowe, prototypy hi-fi, gesty i ruch, przekazanie projektu i studia przypadków.
     link: /pl/high-fidelity-design/
+  - title: Rozdział 6 - Responsywne strony internetowe
+    details: Struktury stron, mapy witryn, układy strony głównej, punkty przerwania, responsywne wireframe'y i prototypy, dostępność stron, krytyka projektu i pierwsze poszukiwanie pracy w UX.
+    link: /pl/responsive-websites/
 ---

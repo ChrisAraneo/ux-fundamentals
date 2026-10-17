@@ -127,6 +127,30 @@ const chapters: Chapter[] = [
       ['17-handoff-and-case-study', 'Handoff and case study', 'Przekazanie projektu i studium przypadku'],
       ['18-glossary', 'Glossary', 'Słowniczek']
     ]
+  },
+  {
+    folder: 'responsive-websites',
+    title: { en: 'Chapter 6: Responsive websites', pl: 'Rozdział 6: Responsywne strony internetowe' },
+    navTitle: { en: 'Chapter 6: Responsive web', pl: 'Rozdział 6: Strony responsywne' },
+    pages: [
+      ['01-responsive-websites', 'Responsive websites', 'Responsywne strony internetowe'],
+      ['02-website-structures', 'Website structures', 'Struktury stron internetowych'],
+      ['03-sitemaps-for-websites', 'Sitemaps for websites', 'Mapy witryn dla stron internetowych'],
+      ['04-homepage-layouts', 'Homepage layouts', 'Układy strony głównej'],
+      ['05-paper-wireframes-for-websites', 'Paper wireframes for websites', "Papierowe wireframe'y stron internetowych"],
+      ['06-responsive-layouts-and-breakpoints', 'Responsive layouts and breakpoints', 'Układy responsywne i punkty przerwania'],
+      ['07-components-for-small-screens', 'Components for small screens', 'Komponenty na małe ekrany'],
+      ['08-digital-wireframes-for-websites', 'Digital wireframes for websites', "Cyfrowe wireframe'y stron internetowych"],
+      ['09-refining-wireframes', 'Refining wireframes', "Dopracowywanie wireframe'ów"],
+      ['10-low-fidelity-website-prototype', 'Low-fidelity website prototype', 'Prototyp strony niskiej wierności'],
+      ['11-website-mockups', 'Website mockups', 'Makiety strony internetowej'],
+      ['12-high-fidelity-website-prototype', 'High-fidelity website prototype', 'Prototyp strony wysokiej wierności'],
+      ['13-web-accessibility', 'Web accessibility', 'Dostępność stron internetowych'],
+      ['14-design-critiques', 'Design critiques', 'Krytyka projektu'],
+      ['15-developers-and-case-study', 'Developers and the case study', 'Programiści i studium przypadku'],
+      ['16-ux-jobs-and-resumes', 'UX jobs and resumes', 'Praca w UX i CV'],
+      ['17-glossary', 'Glossary', 'Słowniczek']
+    ]
   }
 ]
 

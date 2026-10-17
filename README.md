@@ -2,7 +2,11 @@
 
 Comprehensive guide to website UX fundamentals for beginners, built with [VitePress](https://vitepress.dev) and available in **English** and **Polish**.
 
-Topics covered:
+## Chapters
+
+- **Chapter 1: Foundations of UX design** (`docs/foundations/`): what UX is, roles in UX, the product development life cycle, user-centered and inclusive design, assistive technology, platforms, design thinking, design sprints, UX research, and bias in research
+
+Older guides waiting to be reworked into chapters (in `__old/`):
 
 - **Responsive design**: learn about responsive web design, breakpoints, and designing for multiple devices
 - **Information architecture**: understand how to organize content effectively
@@ -39,10 +43,12 @@ __old/                      # previous guides, not included in the site for now
 ├── *.md                    # English
 └── pl/*.md                 # Polish translations
 docs/
-├── .vitepress/config.mts   # site config and locales
+├── .vitepress/config.mts   # site config, locales, and sidebars
 ├── index.md                # English home page
+├── foundations/            # Chapter 1 (English)
 └── pl/
-    └── index.md            # Polish home page
+    ├── index.md            # Polish home page
+    └── foundations/        # Chapter 1 (Polish)
 ```
 
-English is the default locale served at `/`, Polish is served at `/pl/`. When adding a new page, create it in both `docs/` and `docs/pl/` with the same file name.
+English is the default locale served at `/`, Polish is served at `/pl/`. When adding a new page, create it in both `docs/` and `docs/pl/` with the same file name, and add it to both sidebars in `docs/.vitepress/config.mts`.
